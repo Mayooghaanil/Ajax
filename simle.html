@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>basic ajax webpage</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("#div1").load("load.txt");
+            });
+        });
+    </script>
+    <div id="div1">
+        <h4>Welcome to ajax</h4>
+
+        <button>Click me</button>
+    </div>
+</body>
+
+</html>

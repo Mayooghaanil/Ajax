@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>basic ajax webpage</title>
+
+
+</head>
+
+<body>
+
+    <h4 id="demo">Welcome</h4>
+    <button onclick="submit1()" type="submit">click</button>
+    <script type="text/javascript">
+        function submit1() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("demo").innerHTML = this.responseText;
+                }
+            }
+            xhttp.open("GET", "page.txt", true)
+            xhttp.send()
+        }
+    </script>
+</body>
+
+</html>
